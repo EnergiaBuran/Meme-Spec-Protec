@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if invalid %}
+  <h3>Invalid Wowhead URL</h3>
+  {% endif %}
+  <form  method="post">
+    Enter Wowhead URL: <input type="text" name="url" size="100" value="{{old_url}}" required>
+    <input type="submit" value="Protec">
+  </form>
+{% endblock %}

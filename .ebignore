@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+venv
+.env
+.gitignore
+dev-requirements.txt
+README.md

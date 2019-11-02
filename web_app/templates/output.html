@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <ol>
+    <li>Find <code>gears.lua</code> inside the Details core folder and open it in a text editor</li>
+    <li>Find the line <code>for i = 1, (MAX_TALENT_TABS or 3) do</code> (around line 2300)</li>
+    <li>Delete all lines of code until the line <code>local MIN_SPECS = 4</code> (keep this line)</li>
+    <li>Copy the below code and paste in place of the code you just deleted</li>
+    <li>Restart WoW</li>
+  </ol>
+
+  <textarea id="memeSpec" rows="{{lines_of_code+1}}" cols="75">
+  {{-code-}}
+  </textarea>
+  <button onclick="addToClipboard()">Copy</button>
+
+  <script>
+  function addToClipboard() {
+    document.getElementById('memeSpec').select()
+    document.execCommand('copy')
+  }
+  </script>
+{% endblock %}
