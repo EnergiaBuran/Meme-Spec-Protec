@@ -5,3 +5,4 @@ venv
 .gitignore
 dev-requirements.txt
 README.md
+.git/
